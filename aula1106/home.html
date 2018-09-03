@@ -101,7 +101,7 @@
               <a class="dropdown-item" href="#"><div>
                 <img src="images/contat1.png" width="50" height="50" alt="pessoa1" style="border-radius: 50%; display: inline;">
                 <div style="display: inline-block;">
-                  <small style="display: block; color: #4267b2;"><b>Pessoa1</b></small>
+                  <small style="display: block;"><b>Pessoa1</b></small>
                   <small class="text-muted">Bla bla bla</small>
                 </div>
               </div></a>
@@ -109,7 +109,7 @@
               <a class="dropdown-item" href="#"><div>
                 <img src="images/contat2.jpg" width="50" height="50" alt="pessoa2" style="border-radius: 50%; display: inline;">
                 <div style="display: inline-block;">
-                  <small style="display: block; color: #4267b2;"><b>Pessoa2</b></small>
+                  <small style="display: block;"><b>Pessoa2</b></small>
                   <small class="text-muted">Bla bla bla</small>
                 </div>
               </div></a>
@@ -117,7 +117,7 @@
               <a class="dropdown-item" href="#"><div>
                 <img src="images/contat3.png" width="50" height="50" alt="pessoa3" style="border-radius: 50%; display: inline;">
                 <div style="display: inline-block;">
-                  <small style="display: block; color: #4267b2;"><b>Pessoa3</b></small>
+                  <small style="display: block;"><b>Pessoa3</b></small>
                   <small class="text-muted">Bla bla bla</small>
                 </div>
               </div></a>
@@ -132,17 +132,68 @@
             <a class="nav-link text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fas fa-globe"></i>
             </a>
-            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
-              <a class="dropdown-item" href="#">Pessoa1</a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="width: 430px;">
+              <small><b>Notificações</b></small>
+              <div style="font-size: 12px; display: inline-flex;">
+                <a href="#">Marcar todas como lidas</a> &middot; <a href="#">Configurações</a>
+              </div>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Pessoa2</a>
+              <a class="dropdown-item" href="#"><div>
+                <img src="images/contat1.png" width="50" height="50" alt="pessoa1" style="border-radius: 50%; display: inline;">
+                <div style="display: inline-block;">
+                  <small style="display: block;"><b>Pessoa1</b> adicionou uma nova foto.</small>
+                  <img src="images/imagem.png" width="16" height="16" alt="" style="color: white; font-size: 10px; padding: 0; border-radius: 20%;"><small class="text-muted"> 10 hours ago</small>
+                </div>
+              </div></a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#">Pessoa3</a>
+              <a class="dropdown-item" href="#"><div>
+                <img src="images/contat2.jpg" width="50" height="50" alt="pessoa2" style="border-radius: 50%; display: inline;">
+                <div style="display: inline-block;">
+                  <small style="display: block;"><b>Pessoa2</b> reagiu ao seu comentário.</small>
+                  <i class="fas fa-heart" style="color: white; font-size: 10px; background-color: red; padding: 4px 4.5px; border-radius: 50%;"></i><small class="text-muted"> 3 hours ago</small>
+                </div>
+              </div></a>
+              <div class="dropdown-divider"></div>
+              <a class="dropdown-item" href="#"><div>
+                <img src="images/contat3.png" width="50" height="50" alt="pessoa3" style="border-radius: 50%; display: inline;">
+                <div style="display: inline-block;">
+                  <small style="display: block;"><b>Pessoa3</b> adicionou uma foto ao grupo <b>Sei lá o que</b></small>
+                  <i class="fas fa-users" style="color: white; font-size: 10px; background-color: #5d92ff; padding: 5px 3px; border-radius: 50%;"></i><small class="text-muted"> 8 hours ago</small>
+                </div>
+              </div></a>
+              <div class="dropdown-divider"></div>
+              <div class="text-center">
+                <a href="#"><small>Ver tudo</small></a>
+              </div>
             </div>
           </li>
-          <li class="nav-item dropdown active text-dark">
+          <li class="nav-item dropdown active text-dark" style="border-right: 0.7px solid #0000001a;">
             <a class="nav-link text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
               <i class="fas fa-question-circle"></i>
+            </a>
+            <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="width: 260px;">
+              <small><b>Ajuda rápida</b></small>
+              <div style="font-size: 12px; display: inline-flex;">
+                <a href="#">Central de ajuda</a>
+              </div>
+              <form class="form-inline">
+                <div class="input-group" style="display: inline-flex;">
+                  <input type="text" class="form-control" placeholder="Como podemos ajudar?" aria-label="Input group example" aria-describedby="btnGroupAddon" style="border-radius: 0; height: 32px; width: 80%; border: 0.5px solid #29487d; border-right: none; border-color: #dddfe2;">
+                  <div class="btn-group" role="group" aria-label="Basic example">
+                    <button type="button" class="btn" style="border-radius: 0; border: 0.5px solid #29487d; border-left: none; height: 32px; padding: 0; padding-right: 15px; padding-left: 15px; background-color: white; border-color: #dddfe2;"><i class="fas fa-search" style="font-size: 15px; color: #90949c;"></i></button>
+                  </div>
+                </div>
+              </form>
+              <div class="text-muted" style="font-size: 11px;"><b>AJUDA COM ESTA PÁGINA</b></div>
+              <div class="dropdown-divider"></div>
+              <div class="text-center">
+                <a href="#"><small>Ver tudo</small></a>
+              </div>
+            </div>
+          </li>
+          <!--<li class="nav-item dropdown active text-dark">
+            <a class="nav-link text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown">
               <a class="dropdown-item" href="#">Pessoa1</a>
@@ -151,7 +202,7 @@
               <div class="dropdown-divider"></div>
               <a class="dropdown-item" href="#">Pessoa3</a>
             </div>
-          </li>
+          </li>-->
           <li class="nav-item dropdown active text-dark">
             <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             </a>
