@@ -13,6 +13,10 @@
 
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
 
+    <style type="text/css">a.menu1:hover{background-color: #4267b2; border: 1px solid #29487d; border-left: 0px; border-right: 0px;}</style>
+    <style type="text/css">a.menu2{padding: 0; background: transparent; border: transparent;}</style>    
+    <style type="text/css">a.menu2:hover{padding: 0; background-color: #f5f6f7; border: 1px solid #dddfe2;}</style>
+
   </head>
 
   <body style="background-color: #0000001a; font-family: inherit;">
@@ -52,15 +56,17 @@
               </div>
               <div style="background-color: #fff9d7; text-align: justify;">
                 <div class="dropdown-divider"></div>
-                <small>Somente aceite solicitações de amizade de pessoas que você realmente conheça.</small>
+                <div>
+                  <small>Somente aceite solicitações de amizade de pessoas que você realmente conheça.</small>
+                </div>
                 <div class="dropdown-divider" style="border-color: #e2c822;"></div>
               </div>
               <div>
                 <img src="images/solit1.png" width="50" height="50" alt="pessoa1" style="border-radius: 50%; display: inline;">
                 <div style="display: inline-block;">
                   <small style="display: block; color: #4267b2;"><b>Pessoa1</b></small>
-                  <button type="button" class="btn" style="background-color: #4267b2; border-color: #4267b2; color: white; height: 22px; padding: 0;"><small><b>Confirmar</b></small></button>
-                  <button type="button" class="btn" style="background-color: #f5f6f7; border-color: #ccd0d5; color: #4b4f56; height: 22px; padding: 0;"><small><b>Excluir</b></small></button>
+                  <button type="button" class="btn" style="background-color: #4267b2; border-color: #4267b2; color: white; height: 22px; padding: 0px 5px 25px 5px;"><small><b>Confirmar</b></small></button>
+                  <button type="button" class="btn" style="background-color: #f5f6f7; border-color: #ccd0d5; color: #4b4f56; height: 22px; padding: 0px 5px 25px 5px;"><small><b>Excluir</b></small></button>
                 </div>
                 <div class="dropdown-divider"></div>
               </div>
@@ -68,8 +74,8 @@
                 <img src="images/solit2.png" width="50" height="50" alt="pessoa2" style="border-radius: 50%; display: inline;">
                 <div style="display: inline-block;">
                   <small style="display: block; color: #4267b2;"><b>Pessoa2</b></small>
-                  <button type="button" class="btn" style="background-color: #4267b2; border-color: #4267b2; color: white; height: 22px; padding: 0;"><small><b>Confirmar</b></small></button>
-                  <button type="button" class="btn" style="background-color: #f5f6f7; border-color: #ccd0d5; color: #4b4f56; height: 22px; padding: 0;"><small><b>Excluir</b></small></button>
+                  <button type="button" class="btn" style="background-color: #4267b2; border-color: #4267b2; color: white; height: 22px; padding: 0px 5px 25px 5px;"><small><b>Confirmar</b></small></button>
+                  <button type="button" class="btn" style="background-color: #f5f6f7; border-color: #ccd0d5; color: #4b4f56; height: 22px; padding: 0px 5px 25px 5px;"><small><b>Excluir</b></small></button>
                 </div>
                 <div class="dropdown-divider"></div>
               </div>
@@ -77,8 +83,8 @@
                 <img src="images/solit3.png" width="50" height="50" alt="pessoa3" style="border-radius: 50%; display: inline;">
                 <div style="display: inline-block;">
                   <small style="display: block; color: #4267b2;"><b>Pessoa3</b></small>
-                  <button type="button" class="btn" style="background-color: #4267b2; border-color: #4267b2; color: white; height: 22px; padding: 0;"><small><b>Confirmar</b></small></button>
-                  <button type="button" class="btn" style="background-color: #f5f6f7; border-color: #ccd0d5; color: #4b4f56; height: 22px; padding: 0;"><small><b>Excluir</b></small></button>
+                  <button type="button" class="btn" style="background-color: #4267b2; border-color: #4267b2; color: white; height: 22px; padding: 0px 5px 25px 5px;"><small><b>Confirmar</b></small></button>
+                  <button type="button" class="btn" style="background-color: #f5f6f7; border-color: #ccd0d5; color: #4b4f56; height: 22px; padding: 0px 5px 25px 5px;"><small><b>Excluir</b></small></button>
                 </div>
               </div>
               <div class="dropdown-divider"></div>
@@ -209,29 +215,85 @@
               <a class="dropdown-item" href="#" style="font-size: 12px;"><img src="images/icon2.png" style="display: inline;"> Relatar um problema</a>
             </div>
           </li>
-
-
           <li class="nav-item dropdown active text-dark">
             <a class="nav-link dropdown-toggle text-dark" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="width: 260px;">
-              <a class="dropdown-item" href="#" style="font-size: 12px;">Criar Página</a>
+              <a class="dropdown-item menu1" href="#" style="font-size: 12px;">Criar Página</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#" style="font-size: 12px;">Criar grupo</a>
-              <a class="dropdown-item" href="#" style="font-size: 12px;">Seus grupos</a>
+              <a class="dropdown-item menu1" href="#" style="font-size: 12px;">Criar grupo</a>
+              <a class="dropdown-item menu1" href="#" style="font-size: 12px;">Seus grupos</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#" style="font-size: 12px;">Criar anúncios</a>
-              <a class="dropdown-item" href="#" style="font-size: 12px;">Publicidade no Facebook</a>
+              <a class="dropdown-item menu1" href="#" style="font-size: 12px;">Criar anúncios</a>
+              <a class="dropdown-item menu1" href="#" style="font-size: 12px;">Publicidade no Facebook</a>
               <div class="dropdown-divider"></div>
-              <a class="dropdown-item" href="#" style="font-size: 12px;">Registro de Atividades</a>
-              <a class="dropdown-item" href="#" style="font-size: 12px;">Criar Página</a>
-              <a class="dropdown-item" href="#" style="font-size: 12px;">Preferências do Feed de Notícias</a>
-              <a class="dropdown-item" href="#" style="font-size: 12px;">Sair</a>
+              <a class="dropdown-item menu1" href="#" style="font-size: 12px;">Registro de Atividades</a>
+              <a class="dropdown-item menu1" href="#" style="font-size: 12px;">Criar Página</a>
+              <a class="dropdown-item menu1" href="#" style="font-size: 12px;">Preferências do Feed de Notícias</a>
+              <a class="dropdown-item menu1" href="#" style="font-size: 12px;">Sair</a>
             </div>
           </li>
         </ul>
       </div>
     </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col mx-2">
+          <div>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action menu2"><small>Nicole Estrela Joia</small></a>
+            </div>
+            <div class="list-group">
+              <a href="#" class="list-group-item list-group-item-action" style="padding: 0; background-color: #f5f6f7; border: 1px solid #dddfe2;"><small>Feed de Notícias</small></a>
+              
+              <a href="#" class="list-group-item list-group-item-action menu2"><small>Messenger</small></a>
+            </div>
+            <div class="list-group">
+              <div style="font-size: 13px; text-align: inherit; white-space: nowrap; width: 100%; color: #616770;"><b>Atalhos</b></div>
+              <a href="#" class="list-group-item list-group-item-action menu2"><small>Um Grupo Aleatório</small></a>
+              <a href="#" class="list-group-item list-group-item-action menu2"><small>Um Grupo Aleatório</small></a>
+              <a href="#" class="list-group-item list-group-item-action menu2"><small>Um Grupo Aleatório</small></a>
+              <a href="#" class="list-group-item list-group-item-action menu2"><small>Um Grupo Aleatório</small></a>
+              <a href="#" class="list-group-item list-group-item-action menu2"><small>Um Grupo Aleatório</small></a>
+            </div>
+            <div class="list-group">
+              <div style="font-size: 13px; text-align: inherit; white-space: nowrap; width: 100%; color: #616770;"><b>Explorar</b></div>
+              <a href="#" class="list-group-item list-group-item-action menu2"><small>Eventos</small></a>
+              <a href="#" class="list-group-item list-group-item-action menu2"><small>Grupos</small></a>
+              <a href="#" class="list-group-item list-group-item-action menu2"><small>Páginas</small></a>
+              <a href="#" class="list-group-item list-group-item-action menu2"><small>Campanhas de arr...</small></a>
+              <a href="#" class="list-group-item list-group-item-action menu2"><small>Listas de amigos</small></a>
+            </div>
+            <div class="list-group">
+              <div style="font-size: 13px; text-align: inherit; white-space: nowrap; width: 100%; color: #616770;"><b>Criar</b></div>
+              <a href="#" style="display: inline;"><small>Anúncio</small></a> &middot; <a href="#" style="display: inline;"><small>Página</small></a> &middot; <a href="#" style="display: inline;"><small>Grupo</small></a> &middot; <a href="#" style="display: inline;"><small>Evento</small></a>
+            </div>
+          </div>
+        </div>
+        <div class="col mx-5">
+          
+        </div>
+        <div class="col mx-3">
+          
+        </div>
+        <div class="col mx-2">
+          
+        </div>
+      </div>      
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
 
 
   	<!--<nav class="navbar navbar-dark" style="background-color: #4267b2; border-bottom: 1px solid #29487d; padding: 0;">
