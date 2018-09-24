@@ -17,7 +17,11 @@
     <style type="text/css">a.menu2{padding: 0; background: transparent; border: transparent;}</style>    
     <style type="text/css">a.menu2:hover{padding: 0; background-color: #f5f6f7; border: 1px solid #dddfe2;}</style>
     <style type="text/css">a.menu3:active{color: white;}</style>
-  
+    <style type="text/css">button.botao-pub{background-color: #ffffff; width: 47%; border: none; height: 35px;}</style>
+    <style type="text/css">button.botao-pub:hover{background-color: #f6f6f6;}</style>
+
+
+
 
 
 
@@ -141,7 +145,7 @@
           </li>
           <li class="nav-item dropdown active text-dark">
             <a class="nav-link text-dark menu3" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-              <i class="fas fa-globe" style="font-size: 20px; margin-top: 5px; border-right: 0.7px solid #0000001a; padding-right: 15px;"></i>
+              <i class="fas fa-bell" style="font-size: 20px; margin-top: 5px; border-right: 0.7px solid #0000001a; padding-right: 15px;"></i>
             </a>
             <div class="dropdown-menu" aria-labelledby="navbarDropdown" style="width: 430px;">
               <small><b>Notificações</b></small>
@@ -177,7 +181,7 @@
               </div></a>
               <div class="dropdown-divider"></div>
               <div class="text-center">
-                <a href="#"><small>Ver tudo</small></a>
+                <a href="#"><small><b>Ver tudo</b></small></a>
               </div>
             </div>
           </li>
@@ -281,7 +285,9 @@
             </div>
           </div>
         </div>
+
         <div class="col mx-7">
+          <!-- Pessoa publicar -->
           <div class="card" style="width: 500px; height: 155px; margin-top: 10px;">
             <div class="card-header" style="padding: 0; padding-top: 5px; padding-bottom: 5px; padding-left: 10px;">
               <a href="#" style="display: inline; color: #4b4f56; font-size: 15px; border-right: 1px solid #ccd0d5; padding-right: 5px;"><i class="fas fa-pencil-alt"></i><small><b> Criar publicação</b></small></a>
@@ -295,11 +301,15 @@
                 </div>
                 <hr style="margin: 7px;">
                 <button style="background-color: #f5f6f7; border: none; border-radius: 18px; font-size: 12px; padding: 5px 10px; color: #4b4f56;"><img src="images/img-poster1.png" alt=""><b> Foto/vídeo</b></button>
+                <button style="background-color: #f5f6f7; border: none; border-radius: 18px; font-size: 12px; padding: 5px 10px; color: #4b4f56;"><i class="fas fa-user-tag" style="font-size: 16px; color: #4db3f7;"></i><b> Marcar amigos</b></button>
                 <button style="background-color: #f5f6f7; border: none; border-radius: 18px; font-size: 12px; padding: 5px 10px; color: #4b4f56;"><img src="images/img-poster2.png" alt=""><b> Sentimento/atividade</b></button>
                 <button style="background-color: #f5f6f7; border: none; border-radius: 18px; font-size: 12px; padding: 5px 10px; color: #999da6;">&bull;&bull;&bull;</button>
               </blockquote>
             </div>
           </div>
+          <!-- /Pessoa publicar -->
+
+          <!-- Publicação 1 -->
           <div class="card" style="width: 500px; height: auto; margin-top: 10px; padding: 0;">
             <div class="card-body" style="padding: 0;">
               <div style="padding-left: 10px; padding-right: 10px;">
@@ -317,20 +327,22 @@
                 <div>
                   <a href="#"><img src="images/simb1.png" width="17" height="17" alt="Nicole" style="border-radius: 50px;"><small style="color: #606770;"> Pessoa1, Pessoa2, Pessoa3 e Pessoa4</small></a>
                 </div>
-                <hr style="margin: 0; margin: 7px; padding-left: 10px; padding-right: 10px;">
+                <hr style="margin: 0; margin: 4px 7px; padding-left: 10px; padding-right: 10px;">
                 <div>
-                  <a href="#" style="color: #606770; padding-left: 45px;"><i class="far fa-thumbs-up"></i> Curtir</a>
-                  <a href="#" style="color: #606770; padding-left: 45px;"><i class="far fa-comment-alt"></i> Comentar</a>
-                  <a href="#" style="color: #606770; padding-left: 45px;"><i class="far fa-share"></i> Compartilhar</a>
+                  <button class="botao-pub"><a href="#" style="color: #606770;"><i class="far fa-thumbs-up"></i> Curtir</a></button>
+                  <button class="botao-pub"><a href="#" style="color: #606770;"><i class="far fa-comment-alt"></i> Comentar</a></button>
                 </div>
               </div>
             </div>
-            <hr style="margin: 0; margin-top: 7px; margin-bottom: 7px;">
+            <hr style="margin: 0; margin-top: 4px; margin-bottom: 7px;">
             <div style="display: inline;">
               <img src="images/img-nick.jpg" width="32" height="32" alt="Nicole" style="border-radius: 50px; display: inline; margin-left: 15px;">
               <input type="text" name="comentar" placeholder="Escreva um comentário..." style="display: inline; border-radius: 20px; padding: 6px 8px; border: 1px solid #ccd0d5; background-color: #f2f3f5; font-size: 13px; color: #999ca3; display: inline; width: 80%; margin-bottom: 10px;">
             </div>
           </div>
+          <!-- /Publicação 1 -->
+
+          <!-- Publicação 2 -->
           <div class="card" style="width: 500px; height: auto; margin-top: 10px; padding: 0;">
             <div class="card-body" style="padding: 0;">
               <div style="padding-left: 10px; padding-right: 10px;">
@@ -348,20 +360,22 @@
                 <div>
                   <a href="#"><img src="images/simb2.png" width="17" height="17" alt="Nicole" style="border-radius: 50px;"><small style="color: #606770;"> Pessoa1, Pessoa2, Pessoa3, Pessoa4 e Pessoa5</small></a>
                 </div>
-                <hr style="margin: 0; margin: 7px; padding-left: 10px; padding-right: 10px;">
+                <hr style="margin: 0; margin: 4px 7px; padding-left: 10px; padding-right: 10px;">
                 <div>
-                  <a href="#" style="color: #606770; padding-left: 45px;"><i class="far fa-thumbs-up"></i> Curtir</a>
-                  <a href="#" style="color: #606770; padding-left: 45px;"><i class="far fa-comment-alt"></i> Comentar</a>
-                  <a href="#" style="color: #606770; padding-left: 45px;"><i class="far fa-share"></i> Compartilhar</a>
+                  <button class="botao-pub"><a href="#" style="color: #606770;"><i class="far fa-thumbs-up"></i> Curtir</a></button>
+                  <button class="botao-pub"><a href="#" style="color: #606770;"><i class="far fa-comment-alt"></i> Comentar</a></button>
                 </div>
               </div>
             </div>
-            <hr style="margin: 0; margin-top: 7px; margin-bottom: 7px;">
+            <hr style="margin: 0; margin-top: 4px; margin-bottom: 7px;">
             <div style="display: inline;">
               <img src="images/img-nick.jpg" width="32" height="32" alt="Nicole" style="border-radius: 50px; display: inline; margin-left: 15px;">
               <input type="text" name="comentar" placeholder="Escreva um comentário..." style="display: inline; border-radius: 20px; padding: 6px 8px; border: 1px solid #ccd0d5; background-color: #f2f3f5; font-size: 13px; color: #999ca3; display: inline; width: 80%; margin-bottom: 10px;">
             </div>
           </div>
+          <!-- /Publicação 2 -->
+
+          <!-- Publicação 3 -->
           <div class="card" style="width: 500px; height: auto; margin-top: 10px; padding: 0;">
             <div class="card-body" style="padding: 0;">
               <div style="padding-left: 10px; padding-right: 10px;">
@@ -379,23 +393,24 @@
                 <div>
                   <a href="#"><img src="images/simb3.png" width="17" height="17" alt="Nicole" style="border-radius: 50px;"><small style="color: #606770;"> 150 pessoas reagiram a isso</small></a>
                 </div>
-                <hr style="margin: 0; margin: 7px; padding-left: 10px; padding-right: 10px;">
+                <hr style="margin: 0; margin:4px  7px; padding-left: 10px; padding-right: 10px;">
                 <div>
-                  <a href="#" style="color: #606770; padding-left: 45px;"><i class="far fa-thumbs-up"></i> Curtir</a>
-                  <a href="#" style="color: #606770; padding-left: 45px;"><i class="far fa-comment-alt"></i> Comentar</a>
-                  <a href="#" style="color: #606770; padding-left: 45px;"><i class="far fa-share"></i> Compartilhar</a>
+                  <button class="botao-pub"><a href="#" style="color: #606770;"><i class="far fa-thumbs-up"></i> Curtir</a></button>
+                  <button class="botao-pub"><a href="#" style="color: #606770;"><i class="far fa-comment-alt"></i> Comentar</a></button>
                 </div>
               </div>
             </div>
-            <hr style="margin: 0; margin-top: 7px; margin-bottom: 7px;">
+            <hr style="margin: 0; margin-top: 4px; margin-bottom: 7px;">
             <div style="display: inline;">
               <img src="images/img-nick.jpg" width="32" height="32" alt="Nicole" style="border-radius: 50px; display: inline; margin-left: 15px;">
               <input type="text" name="comentar" placeholder="Escreva um comentário..." style="display: inline; border-radius: 20px; padding: 6px 8px; border: 1px solid #ccd0d5; background-color: #f2f3f5; font-size: 13px; color: #999ca3; display: inline; width: 80%; margin-bottom: 10px;">
             </div>
           </div>
+          <!-- /Publicação 3 -->
         </div>
-        <div class="col mx-4" style="padding-top: 10px;">
-          <div class="card" style="margin: 0;">
+
+        <div class="col mx-4">
+          <div class="card" style="margin: 0; width: 308px; margin-top: 10px;">
             <div class="card-body" style="width: 308px; padding: 0; margin: 0; padding-right: 6px;">
               <div style="padding-left: 20px; padding-top: 10px; padding-bottom: 5px;">
                 <small><a href="#" style="display: inline; color: #616770; font-size: 14px; padding-right: 5px;"><b>Stories</b></a></small>
@@ -433,42 +448,42 @@
             </div>
           </div>
 
-          <div class="card" style="margin: 0;">
+          <div class="card" style="margin: 0; width: 308px; margin-top: 10px;">
             <div class="card-body" style="width: 308px; padding: 0; margin: 0; padding-right: 6px;">
               <div style="padding-left: 20px; padding-top: 10px; padding-bottom: 5px;">
                 <small><a href="#" style="display: inline; color: #616770; font-size: 14px; padding-right: 5px;"><b>Grupos sugeridos</b></a></small>
                 <small style="color: #365899;"> <a href="#" style="color: #365899;">Ver tudo</a></small>
               </div>
-              <div style="display: flex; padding: 8px 2px; margin-left: 6px;">
+              <div style="display: flex; padding: 8px 5px; margin-left: 6px;">
                 <div class="card">
                   <img class="card-img-top" src="images/group1.png" alt="Card image cap">
                   <div class="card-body" style="padding: 0; padding: 10px;">
                     <a href="#"><small style="color: #365899; display: inline-block;"><b>Grupo genérico</b></small></a>
-                    <div style="display: inline;">
+                    <div style="display: inline; float: right;">
                       <button style="display: inline; background-color: #f5f6f7; border: 1px solid #ccd0d5; color: #4b4f56; border-radius: 3px;"><b>+</b><small><b> Participar</b></small></button>
                     </div>
                     <small style="color: #90949c; display: block;">15.000 membros</small>
                   </div>
                 </div>
               </div>
-              <div style="display: flex; padding: 8px 2px; margin-left: 6px;">
+              <div style="display: flex; padding: 8px 5px; margin-left: 6px;">
                 <div class="card">
                   <img class="card-img-top" src="images/group2.png" alt="Card image cap">
                   <div class="card-body" style="padding: 0; padding: 10px;">
                     <a href="#"><small style="color: #365899; display: inline-block;"><b>Grupo genérico</b></small></a>
-                    <div style="display: inline;">
+                    <div style="display: inline; float: right;">
                       <button style="display: inline; background-color: #f5f6f7; border: 1px solid #ccd0d5; color: #4b4f56; border-radius: 3px;"><b>+</b><small><b> Participar</b></small></button>
                     </div>
                     <small style="color: #90949c; display: block;">15.000 membros</small>
                   </div>
                 </div>
               </div>
-              <div style="display: flex; padding: 8px 2px; margin-left: 6px;">
+              <div style="display: flex; padding: 8px 5px; margin-left: 6px;">
                 <div class="card">
                   <img class="card-img-top" src="images/group3.png" alt="Card image cap">
                   <div class="card-body" style="padding: 0; padding: 10px;">
                     <a href="#"><small style="color: #365899; display: inline-block;"><b>Grupo genérico</b></small></a>
-                    <div style="display: inline;">
+                    <div style="display: inline; float: right;">
                       <button style="display: inline; background-color: #f5f6f7; border: 1px solid #ccd0d5; color: #4b4f56; border-radius: 3px;"><b>+</b><small><b> Participar</b></small></button>
                     </div>
                     <small style="color: #90949c; display: block;">15.000 membros</small>
@@ -478,15 +493,15 @@
             </div>
           </div>
 
-          <div class="card" style="margin: 0;">
+          <div class="card" style="margin: 0; width: 308px; margin-top: 10px;">
             <div class="card-body" style="width: 308px; padding: 0; margin: 0; padding-right: 6px;">
               <div style="padding-left: 20px; padding-top: 10px; padding-bottom: 5px;">
                 <small><a href="#" style="display: inline; color: #616770; font-size: 14px; padding-right: 5px;"><b>Páginas sugeridas</b></a></small>
                 <small style="color: #365899;"> <a href="#" style="color: #365899;">Ver tudo</a></small>
               </div>
-              <div style="display: flex; padding: 8px 2px; margin-left: 6px;">
+              <div style="display: flex; padding: 8px 5px; margin-left: 6px;">
                 <div class="card" style="border-radius: 0;">
-                  <div class="card-header" style="background-color: #ffffff;">
+                  <div class="card-header" style="background-color: #ffffff; padding: 15px;">
                     <!-- Espaço que o Facebook deixa -->
                   </div>
                   <div class="card-body" style="padding: 0;">
@@ -505,8 +520,8 @@
             </div>
           </div>
 
-          <div class="card" style="margin: 0;">
-            <div class="card-body" style="width: 308px; padding: 0; margin: 0; padding: 10px;">
+          <div class="card" style="width: 308px; margin: 0; margin-top: 10px;">
+            <div class="card-body" style="padding: 0; margin: 0; padding: 10px;">
               <div style="display: inline;">
                 <small style="color: #90949c;">Português (Brasil)</small> &middot; <a href="#"><small style="color: #365899;">Português (Portugal)</small></a> &middot; <a href="#"><small style="color: #365899;">English (US)</small></a> &middot; <a href="#"><small style="color: #365899;">Español</small></a> &middot; <a href="#"><small style="color: #365899;">Français (France)</small></a>
               </div>
@@ -520,6 +535,41 @@
     </div>
 
 
+
+
+
+    <div class="" style="display: fixed;">
+      <div class="">
+        <div class="row">
+          <div class="col">
+            <div class="nav flex-column nav-pills" id="v-pills-tab" role="tablist" aria-orientation="vertical">
+              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Pessoa1</a>
+              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Pessoa2</a>
+              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Pessoa3</a>
+              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Pessoa4</a>
+              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Pessoa5</a>
+              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Pessoa6</a>
+              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Pessoa7</a>
+              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Pessoa8</a>
+              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Pessoa9</a>
+              <a class="nav-link" id="v-pills-messages-tab" data-toggle="pill" href="#v-pills-messages" role="tab" aria-controls="v-pills-messages" aria-selected="false">Pessoa10</a>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col">
+            <form class="form-inline" style="text-align: inherit; white-space: nowrap; width: 100%;">
+              <div class="input-group" style="display: inline-flex;">
+                <div class="btn-group" role="group" aria-label="Basic example">
+                  <button type="button" class="btn" style="border-radius: 0; border: 0.5px solid #29487d; border-right: none; height: 32px; padding: 0; padding-right: 15px; padding-left: 15px; background-color: white; border-color: #dddfe2;"><i class="fas fa-search" style="font-size: 15px; color: #90949c;"></i></button>
+                </div>
+                <input type="text" class="form-control" placeholder="Pesquisar" aria-label="Input group example" aria-describedby="btnGroupAddon" style="border-radius: 0; height: 32px; width: 70%; border: 0.5px solid #dddfe2; border-left: none; font-size: 12px; color: #dddfe2;">
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
 
 
           <!--  <img src="images/contat1.png" width="50" height="50" alt="pessoa1" style="border-radius: 50%; display: inline;">
